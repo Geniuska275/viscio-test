@@ -1,0 +1,138 @@
+.orderbarType {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem 2rem;
+}
+.orderbarTypeMain {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem 2rem;
+}
+
+.orderGrid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
+	align-content: center;
+	align-items: center;
+}
+.orderGrid2 {
+	grid-template-columns: repeat(4, 1fr);
+}
+.orderGrid3 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.orderGrid.bg-select-2,
+.pricing.bg-select-2 {
+	border-radius: 10px;
+}
+
+.text3 {
+	font-size: 20px;
+}
+
+.dOrderNone.w-25 {
+	width: 25% !important;
+}
+.bigBox > .abs1 {
+	height: 33%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+}
+.backgroundMap {
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+.bigBox .abs1::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 10%;
+	background: rgba(255, 255, 255, 0.2);
+	border-top-left-radius: 100%;
+}
+.bigBox .abs1:nth-child(2)::before {
+	top: 100%;
+}
+.bigBox .abs1:nth-child(3)::before {
+	top: 200%;
+}
+
+.bigBox > .abs {
+	height: 33%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.bigBox .abs::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 10%;
+	background: rgba(255, 255, 255, 0.2);
+	border-top-right-radius: 100%;
+}
+.bigBox .abs:nth-child(5)::before {
+	top: 100%;
+}
+.bigBox .abs:nth-child(6)::before {
+	top: 200%;
+}
+
+@media screen and (max-width: 1200.99px) {
+	.dOrderNone.w-25 {
+		width: 35% !important;
+	}
+	.bigBox .abs::before {
+		width: 15%;
+	}
+	.bigBox .abs1::before {
+		width: 15%;
+	}
+}
+@media screen and (max-width: 991.99px) {
+	.dOrderNone.w-25 {
+		width: 50% !important;
+	}
+}
+@media screen and (max-width: 767.99px) {
+	.orderGrid {
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+	.orderGridNew {
+		grid-template-columns: repeat(4, 1fr) !important;
+	}
+	.dOrderNone {
+		display: none !important;
+	}
+	.orderbarType {
+		gap: 0.5rem !important;
+	}
+	.orderbarTypeMain {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem !important;
+	}
+	.bigBox .abs1::before,
+	.bigBox .abs::before {
+		display: none;
+	}
+}
+
+.mustSeperate {
+	height: 20px !important;
+}
+
+.chatWidth {
+	width: 85%;
+}

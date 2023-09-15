@@ -1,0 +1,8 @@
+node_modules
+viscio/*
+build/*
+package-lock.json
+yarn.lock
+node_modules
+.env
+.vercel
